@@ -1,18 +1,18 @@
 DarinaT - a library of algorithms for one-dimensional minimization and stochastic minimization methods. It includes 9 optimization algorithms and each can be used to solve a specific optimization problem. Below are the principles of their work.
 
-Provides: 
+Provides:<br> 
   -Algorithms for optimizing zero, first and second order. 
   -Algorithms for stochastic optimization methods. 
-  -Test functions for algorithms.
+  -Test functions for algorithms.<br>
   
-Algorithm has arguments listed below:
+Algorithm has arguments listed below:<br>
   n: number of agents
   function: test function
   lb: lower limits for plot axes
   ub: upper limits for plot axes
   dimension: space dimension
   k: number of iterations
-  eps: accuracy of calculations
+  eps: accuracy of calculations<br>
   
 This module implements the following methods: 
   -Dichotomy method
