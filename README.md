@@ -1,29 +1,29 @@
 DarinaT - a library of algorithms for one-dimensional minimization and stochastic minimization methods. It includes 9 optimization algorithms and each can be used to solve a specific optimization problem. Below are the principles of their work.
 
-Provides:<br> 
-  -Algorithms for optimizing zero, first and second order. 
-  -Algorithms for stochastic optimization methods. 
-  -Test functions for algorithms.<br>
+Provides:
+  <br>-Algorithms for optimizing zero, first and second order. <br>
+  <br>-Algorithms for stochastic optimization methods. <br>
+  <br>-Test functions for algorithms.<br>
   
-Algorithm has arguments listed below:<br>
-  n: number of agents
-  function: test function
-  lb: lower limits for plot axes
-  ub: upper limits for plot axes
-  dimension: space dimension
-  k: number of iterations
-  eps: accuracy of calculations<br>
+Algorithm has arguments listed below:
+ <br> n: number of agents<br>
+ <br> function: test function<br>
+ <br> lb: lower limits for plot axes<br>
+ <br> ub: upper limits for plot axes<br>
+ <br> dimension: space dimension<br>
+ <br> k: number of iterations<br>
+ <br> eps: accuracy of calculations<br>
   
 This module implements the following methods: 
-  -Dichotomy method
-  -Gold Section Method
-  -Quadratic approximation method
-  -Midpoint Method
-  -Chord method
-  -Newton Method
-  -Simulated Annealing
-  -Particle Swarm Optimization
-  -Grey Wolf Optimizer
+  <br>-Dichotomy method<br>
+  <br>-Gold Section Method<br>
+  <br>-Quadratic approximation method<br>
+  <br>-Midpoint Method<br>
+  <br>-Chord method<br>
+  <br>-Newton Method<br>
+  <br>-Simulated Annealing<br>
+  <br>-Particle Swarm Optimization<br>
+  <br>-Grey Wolf Optimizer<br>
   
 Then there is a brief description of these methods.
 
