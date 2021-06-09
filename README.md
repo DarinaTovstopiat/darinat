@@ -25,7 +25,8 @@
   <br>-Particle Swarm Optimization<br>
   <br>-Grey Wolf Optimizer<br>
   
-**Then there is a brief description of these methods.**
+  
+Then there is a brief description of these methods.
 
 **Dichotomy method**
 
