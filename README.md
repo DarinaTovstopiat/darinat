@@ -14,7 +14,7 @@
  <br> k: number of iterations<br>
  <br> eps: accuracy of calculations<br>
   
-**This module implements the following methods: **
+ **This module implements the following methods: **
   <br>-Dichotomy method<br>
   <br>-Gold Section Method<br>
   <br>-Quadratic approximation method<br>
