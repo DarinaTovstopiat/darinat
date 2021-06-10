@@ -36,7 +36,7 @@ Bisection method is the simplest among all the numerical schemes to solve the tr
   -By testing the condition  | mi - m i-1| (where i are the iteration number) less than some tolerance limit, say epsilon, fixed a priori. 
   -By testing the condition | f (mi ) | less than some tolerance limit alpha again fixed a priori.
 
-
+For this method, you must specify the function f(x) itself or use f_zero(x), when calling, specify the boundaries left a, and then right b, as well as the accuracy of the calculation eps.
 
 
 **Golden Section Method**
@@ -46,13 +46,14 @@ The golden section search method in one dimension is used to find a minimum for 
   -an optimal reduction of the size of the bracketing interval and
   -a minimal number of function calls.
   
-  
+For this method, you must specify the function f(x) itself or use f_zero(x), when calling, specify the boundaries left a, and then right b, as well as the accuracy of the calculation eps.
   
   
 **Quadratic approximation method**
 
 The simplest version of polynomial interpolation is quadratic approximation based on the fact that the function taking the minimum the value at the inside point of the interval must be at least quadratic. If the function is linear, then its optimal value can be achieved only in one of the two interval limit points. Thus, when implementing the method estimating and using a quadratic approximation is assumed to be bounded interval can be approximated by the function quadratic a polynomial, and then use the plotted  approximation scheme for estimating the coordinate of the true minimum point of the function.
 
+For this method, you must specify the function f(x) itself or use f_zero(x), when calling, specify the boundaries left a, and then right b, as well as the accuracy of the calculation eps.
 
 
 **Midpoint Method**
@@ -63,6 +64,7 @@ Start stage To start the method, you must specify [a1, b1] - the initial localiz
 
 Basic Step Take the trial point x at the center of the current interval and check the search termination criteria. Then shorten the current interval
 
+For this method, you must specify the function f(x) itself or use f_ones(x), also evaluate in df(x) the derivative of the function, when calling, specify the boundaries left a, and then right b, as well as the accuracy of the calculation eps.
 
 
 
@@ -70,7 +72,7 @@ Basic Step Take the trial point x at the center of the current interval and chec
 
 If an interpolating curve follows very closely to the data polygon, the length of the curve segment between two adjacent data points would be very close to the length of the chord of these two data points, and the the length of the interpolating curve would also be very close to the total length of the data polygon. In the figure below, each curve segment of an interpolating polynomial is very close to the length of its supporting chord, and the length of the curve is close to the length of the data polygon. Therefore, if the domain is subdivided according to the distribution of the chord lengths, the parameters will be an approximation of the arc-length parameterization. This is the merit of the chord length or chordal method.
 
-
+For this method, you must specify the function f(x) itself or use f_ones(x), also evaluate in df(x) the derivative of the function, when calling, specify the boundaries left a, and then right b, as well as the accuracy of the calculation eps.
 
 
 
@@ -78,7 +80,7 @@ If an interpolating curve follows very closely to the data polygon, the length o
 
 In numerical analysis, Newton's method, also known as the Newton–Raphson method, named after Isaac Newton and Joseph Raphson, is a root-finding algorithm which produces successively better approximations to the roots (or zeroes) of a real-valued function. The most basic version starts with a single-variable function f defined for a real variable x, the function's derivative f ′, and an initial guess x0 for a root of f. If the function satisfies sufficient assumptions and the initial guess is close, then:  x1 = x0 - f(x0)/df(x0)  is a better approximation of the root than x0. Geometrically, (x1, 0) is the intersection of the x-axis and the tangent of the graph of f at (x0, f (x0)): that is, the improved guess is the unique root of the linear approximation at the initial point. The process is repeated as  x(n+1) = x(n) - f(x(n))/df(x(n))  until a sufficiently precise value is reached. This algorithm is first in the class of Householder's methods, succeeded by Halley's method. The method can also be extended to complex functions and to systems of equations.
 
-
+For this method, you must specify the function f(x) itself or use f_ones(x), also evaluate in df(x) the derivative of the function and in ddf(x) the second derivative of this function, when calling, specify the boundaries left a, and then right b, as well as the accuracy of the calculation eps.
 
 
 
@@ -90,7 +92,7 @@ The name of the algorithm comes from annealing in metallurgy, a technique involv
 
 The problems solved by SA are currently formulated by an objective function of many variables, subject to several constraints. In practice, the constraint can be penalized as part of the objective function.
 
-
+For this method, you must specify the function f(x) itself or use the last three functions in the file with test functions, when calling pass the array of x.
 
 
 
@@ -102,9 +104,11 @@ PSO is originally attributed to Kennedy, Eberhart and Shi[2][3] and was first in
 
 PSO is a metaheuristic as it makes few or no assumptions about the problem being optimized and can search very large spaces of candidate solutions. Also, PSO does not use the gradient of the problem being optimized, which means PSO does not require that the optimization problem be differentiable as is required by classic optimization methods such as gradient descent and quasi-newton methods. However, metaheuristics such as PSO do not guarantee an optimal solution is ever found.
 
-
+For this method, you must specify the function f(x) itself or use the last three functions in the file with test functions, when calling pass the number of particles s and variables d.
 
 
 **Grey Wolf Optimizer**
 
 This work proposes a new meta-heuristic called Grey Wolf Optimizer (GWO) inspired by grey wolves (Canis lupus). The GWO algorithm mimics the leadership hierarchy and hunting mechanism of grey wolves in nature. Four types of grey wolves such as alpha, beta, delta, and omega are employed for simulating the leadership hierarchy. In addition, the three main steps of hunting, searching for prey, encircling prey, and attacking prey, are implemented. The algorithm is then benchmarked on 29 well-known test functions, and the results are verified by a comparative study with Particle Swarm Optimization (PSO), Gravitational Search Algorithm (GSA), Differential Evolution (DE), Evolutionary Programming (EP), and Evolution Strategy (ES). The results show that the GWO algorithm is able to provide very competitive results compared to these well-known meta-heuristics. The paper also considers solving three classical engineering design problems (tension/compression spring, welded beam, and pressure vessel designs) and presents a real application of the proposed method in the field of optical engineering. The results of the classical engineering design problems and real application prove that the proposed algorithm is applicable to challenging problems with unknown search spaces.
+
+For this method, you must specify the function f(x) itself or use the last three functions in the file with test functions, when calling pass the number of variables d.
