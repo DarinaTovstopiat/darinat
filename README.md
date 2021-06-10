@@ -8,10 +8,10 @@
 **Algorithm has arguments listed below:**
  <br> n: number of agents<br>
  <br> function: test function<br>
- <br> lb: lower limits for plot axes<br>
- <br> ub: upper limits for plot axes<br>
- <br> dimension: space dimension<br>
- <br> k: number of iterations<br>
+ <br> a: left border<br>
+ <br> b: right border<br>
+ <br> s: number of particles<br>
+ <br> x: number of function variables<br>
  <br> eps: accuracy of calculations<br>
   
  **This module implements the following methods: **
